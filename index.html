@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUCETEC Dev Challenge</title>
+    <!-- Enlace a la hoja de estilos principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado  -->
+    <header>
+        <!-- Logo -->
+        <img src="https://pucetec.puce.edu.ec/2025/theme/puce/pix/logo_puce_colors.svg" alt="Logo PUCETEC Dev Challenge" style="height:60px; margin-bottom:10px;">
+        <h1>PUCETEC Dev Challenge</h1>
+        <p>Únete a nosotros para un emocionante evento de desarrollo donde los mejores talentos se reúnen para innovar y crear.</p>
+    </header>
+    <main>
+        <!-- Sección de inscripción con formulario -->
+        <section>
+            <h2>Inscripción</h2>
+            <form id="registration-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                
+                <label for="career">Carrera:</label>
+                <input type="text" id="career" name="career" placeholder="Tu carrera" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!-- Sección de ediciones anteriores -->
+        <section>
+            <h2>Ediciones Anteriores</h2>
+            <ul>
+                <li>Categoria1 - Hackathon de Innovación</li>
+                <li>categoria2 - Desafío de Desarrollo Sostenible</li>
+                <li>Categoria3 - Maratón de Programación</li>
+            </ul>
+        </section>
+        <!-- Sección donde se mostrarán los participantes aleatorios desde la API -->
+        <section id="participantes">
+            <h2>Participantes Aleatorios</h2>
+            <br>
+            <!-- Aquí JS agregará las tarjetas de participantes -->
+        </section>
+    </main>
+    <!-- Pie de página con enlaces a redes sociales -->
+    <footer>
+        <h2>Conéctate con nosotros</h2>
+        <a href="https://www.facebook.com/paul.alvarez.3720" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/paul.alvarez99/" target="_blank">Instagram</a>
+    </footer>
+    <!-- Botón para cambiar entre tema claro y oscuro -->
+    <button id="theme-toggle">Cambiar tema</button>
+    <!-- Enlace al archivo JavaScript principal -->
+    <script src="script.js"></script>
+</body>
+</html>
